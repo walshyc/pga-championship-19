@@ -2,8 +2,20 @@
 <html lang="en">
 
 <head>
-   
-    
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140143028-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-140143028-1');
+    </script>
+
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,39 +50,39 @@
 
         </div>
         <div class="row">
-                <div class="container">
-                                                
-            <table id="scoreboard" class="table">
-                <thead class="table-header">
+            <div class="container">
 
-                    <tr>
-                        <th data-sort="string">Name</th>
-                        <th data-sort="int" data-sort-onload=yes>Total <i id="refresh"
-                                class="material-icons float-right rotate">
-                                refresh
-                            </i></th>
-                    </tr>
+                <table id="scoreboard" class="table">
+                    <thead class="table-header">
 
-                </thead>
-                <tbody id="scoreboard-row">
+                        <tr>
+                            <th data-sort="string">Name</th>
+                            <th data-sort="int" data-sort-onload=yes>Total <i id="refresh"
+                                    class="material-icons float-right rotate">
+                                    refresh
+                                </i></th>
+                        </tr>
 
-                </tbody>
-            </table>
-            
+                    </thead>
+                    <tbody id="scoreboard-row">
+
+                    </tbody>
+                </table>
+
+            </div>
         </div>
-    </div>
-    <div id="modals"></div>
-    <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+        <div id="modals"></div>
+        <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
         </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
         </script>
-    <script src="/static/js/stupidtable.js"></script>
+        <script src="/static/js/stupidtable.js"></script>
 
-    <script src="/static/js/script.js"></script>
+        <script src="/static/js/script.js"></script>
 
 
 
