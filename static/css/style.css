@@ -1,5 +1,7 @@
 body {
     font-family: 'Nunito', sans-serif;
+    background: #0E0E0E;
+    color: #DBDBDB;
 }
 
 .text-underline {
@@ -7,8 +9,8 @@ body {
 }
 
 .table-header {
-    background-color: #04694A!important;
-    color: #F7F4F0;
+    background-color: #fefefe!important;
+    color: #0E0E0E;
     
 }
 .modal {
@@ -23,7 +25,7 @@ body {
 }
 .page-header {
     min-height: 110px;
-    background-image: url(../img/masters.gif);
+    background-image: url(../img/pga-logo.png);
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 20px;
@@ -88,13 +90,13 @@ table.table-bordered>tbody>tr>th {
 
 .info-row {
     font-size: 10px;
-    background-color: #04694A!important;
+    background-color: #243254!important;
     color: #F7F4F0
 }
 
 .btn-enter{
     color: #F7F4F0;
-    background-color: #04694a
+    background-color: #243254
 }
 
 .rotate{
@@ -109,10 +111,14 @@ table.table-bordered>tbody>tr>th {
     -moz-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
-    color: #04694A;
+    color: #243254;
     cursor: pointer;
 }
 
 .position {
     color: black;
+}
+
+.table td{
+    border:none
 }
