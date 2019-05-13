@@ -23,7 +23,7 @@ body {
 }
 .page-header {
     min-height: 110px;
-    background-image: url(/static/img/masters.gif);
+    background-image: url(static/img/masters.gif);
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 20px;
