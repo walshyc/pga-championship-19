@@ -191,7 +191,7 @@ var picks = [{
 ];
 
 
-$.getJSON('/static/data/masters-scores.json', function (data) {
+$.getJSON('static/data/masters-scores.json', function (data) {
     var totalScore;
     // console.log(data.Leaderboards[1].Tournament);
 
