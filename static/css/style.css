@@ -96,7 +96,9 @@ table.table-bordered>tbody>tr>th {
 
 .btn-enter{
     color: #F7F4F0;
-    background-color: #243254
+    background-color: #243254;
+    margin-top: 15px;
+    width: 100%;
 }
 
 .rotate{

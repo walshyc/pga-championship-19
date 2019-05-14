@@ -1,21 +1,16 @@
 var golfers = [];
+var list = [];
+var sampleObj = {};
+var tournament = "US PGA CHAMPIONSHIP";
+
 $.getJSON('https://golf.jacoduplessis.co.za/?format=json', function (data) {
 
-    if (data.Leaderboards[0].Tournament == "The Masters") {
-
-        golfers = data.Leaderboards[0].Players.map(function (item) {
-            return item.Name;
-        });
-    } else if (data.Leaderboards[1].Tournament == "The Masters") {
-
-        golfers = data.Leaderboards[1].Players.map(function (item) {
-            return item.Name;
-        });
-    } else if (data.Leaderboards[2].Tournament == "The Masters") {
-
-        golfers = data.Leaderboards[2].Players.map(function (item) {
-            return item.Name;
-        });
+    for (x = 0; x < data.Leaderboards.length; x++) {
+        if (data.Leaderboards[x].Tournament == tournament) {
+            golfers = data.Leaderboards[0].Players.map(function (item) {
+                return item.Name;
+            });
+        }
     }
 
     var selectBoxOne = document.getElementById('entryOne');
@@ -41,5 +36,21 @@ $.getJSON('https://golf.jacoduplessis.co.za/?format=json', function (data) {
 
 
 
+    for (x = 0; x < data.Leaderboards.length; x++) {
+        if (data.Leaderboards[x].Tournament == tournament) {
+            list = data.Leaderboards[0].Players.map(function (item) {
+                return item.Name;
+            });
+        }
+    }
 
+    console.log(list);
+    
+
+    for (var s = 0; x < 200; s++){
+        var randomOne = list[Math.floor(Math.random()*list.length)];
+        sampleObj.selections = randomOne;
+    }
+
+    console.log(sampleObj);
 });
