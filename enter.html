@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <title>PGA Championship 2019 Entry</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -23,11 +23,13 @@
 
 <body>
     <div class="container">
-        <div class="row page-header">
+        <a href="index.html">
+            <div class="row page-header">
 
-        </div>
+            </div>
+        </a>
         <div class="enter-form">
-            <form id="enter-form" action="https://formspree.io/conorwalsh0703@gmail.com" method="POST" >
+            <form id="enter-form" action="https://formspree.io/conorwalsh0703@gmail.com" method="POST">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="name" class="form-control" id="name" placeholder="Name" name="entry-name" required>
@@ -35,28 +37,29 @@
 
                 <div class="form-group">
                     <label for="entryOne">Golfer 1</label>
-                    <select class="form-control"  id="entryOne" name="golfer-one">
-                        
+                    <select class="form-control" id="entryOne" name="golfer-one">
+
                     </select>
                 </div>
 
                 <div class="form-group">
                     <label for="entryTwo">Golfer 2</label>
                     <select class="form-control" id="entryTwo" name="golfer-two">
-                        
+
                     </select>
                 </div>
 
                 <div class="form-group">
                     <label for="entryThree">Golfer 3</label>
                     <select class="form-control" id="entryThree" name="golfer-three">
-                        
+
                     </select>
                 </div>
 
                 <div class="form-group">
                     <label for="tiebracker">Tiebraker</label>
-                    <input type="number" class="form-control" id="tiebracker" placeholder="Par = 280" name="tiebracker" min="250" max = "300" required>
+                    <input type="number" class="form-control" id="tiebracker" placeholder="Par = 280" name="tiebracker"
+                        min="250" max="300" required>
                 </div>
 
                 <button type="submit" class="btn btn-enter">Submit</button>
