@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Muli', serif;
     background: #0E0E0E;
     color: #DBDBDB;
 }
@@ -102,15 +104,17 @@ table.table-bordered>tbody>tr>th {
 
 .info-row {
     font-size: 10px;
-    background-color: #243254!important;
+    background-color: #B29452!important;
     color: #F7F4F0
 }
 
 .btn-enter{
-    color: #F7F4F0;
-    background-color: #243254;
+    color: #0e0e0e;
+    background-color: #B29452;
     margin-top: 15px;
     width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .rotate{
@@ -125,7 +129,7 @@ table.table-bordered>tbody>tr>th {
     -moz-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
-    color: #243254;
+    color: #B29452;
     cursor: pointer;
 }
 
