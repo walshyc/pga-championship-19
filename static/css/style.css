@@ -5,13 +5,17 @@ body {
 }
 
 .text-underline {
-    border-bottom: 1px black solid
+    border-bottom: 1px black solid;
 }
 
 .table-header {
-    background-color: #fefefe!important;
-    color: #0E0E0E;
-    
+    background-color: #B29452!important;
+    color: #0e0e0e;
+}
+
+.table-body {
+    background-color: #DBDBDB;
+    color: #0e0e0e;
 }
 .modal {
     position: fixed;
@@ -55,6 +59,14 @@ body {
 
 .modal-body, .modal-footer{
     padding: 0;
+}
+.modal-footer{
+    background-color: #B29452;
+}
+
+.modal-name {
+    font-weight: bold;
+    font-size: 1.8rem;
 }
 
 table.table-bordered {
@@ -123,4 +135,8 @@ table.table-bordered>tbody>tr>th {
 
 .table td{
     border:none
+}
+
+.table {
+    margin-bottom: 0;
 }

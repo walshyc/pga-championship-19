@@ -192,7 +192,7 @@ var picsks = [{
 
 $.getJSON("static/data/entries.json", function (picks) {
         
-console.log(picks);
+
 
 $.getJSON('https://golf.jacoduplessis.co.za/?format=json', function (data) {
     var totalScore;
@@ -286,7 +286,7 @@ $.getJSON('https://golf.jacoduplessis.co.za/?format=json', function (data) {
             scores[i].score = "-";
         }
 
-        
+
 
         $("#scoreboard-row").append(
             `
@@ -312,14 +312,19 @@ $.getJSON('https://golf.jacoduplessis.co.za/?format=json', function (data) {
                   <table class="table indTable">
                   <thead class="table-header">   
                   <tr>
+                  <th colspan="5">
+                  <h5 class = "modal-name align-middle"><img src="/static/img/pga-logo-40px.png" class="align-middle">  ${scores[i].name}</h5>
+                  </th>
+                  </tr>  
+                  <tr>
                             <th>Position</th>
-                            <th>${scores[i].name}</th>
+                            <th>Selections</th>
                             <th>Today</th>
                             <th>Thru</th>
                             <th data-sort="int" data-sort-onload=yes>Total</th>
-                        </tr>
-                        </thead>
-                        <tbody>
+                    </tr>
+                </thead>
+                        <tbody class="table-body">
                         <tr>
                             <td>${scores[i].pickOnePosition}</td>
                             <td>${scores[i].pickOne}</td>
@@ -347,7 +352,8 @@ $.getJSON('https://golf.jacoduplessis.co.za/?format=json', function (data) {
                     
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                   </div>
                 </div>
             
