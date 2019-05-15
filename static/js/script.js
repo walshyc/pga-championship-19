@@ -7,7 +7,7 @@ var scores = [];
 var cutScore = 148;
 var currentTour = "European Tour";
 
-var picks = [{
+var picsks = [{
     "name": "Mark Towey",
     "short": "mtowey",
     "selections": [
@@ -190,6 +190,9 @@ var picks = [{
 }
 ];
 
+$.getJSON("static/data/entries.json", function (picks) {
+        
+console.log(picks);
 
 $.getJSON('https://golf.jacoduplessis.co.za/?format=json', function (data) {
     var totalScore;
@@ -279,6 +282,12 @@ $.getJSON('https://golf.jacoduplessis.co.za/?format=json', function (data) {
 
     for (i = 0; i < scores.length; i++) {
 
+        if(isNaN(scores[i].score)){
+            scores[i].score = "-";
+        }
+
+        
+
         $("#scoreboard-row").append(
             `
                 <tr data-toggle="modal" data-target="#${scores[i].short}-Modal" >
@@ -359,3 +368,5 @@ $.getJSON('https://golf.jacoduplessis.co.za/?format=json', function (data) {
 
 
 });
+}
+);
