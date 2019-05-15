@@ -313,7 +313,7 @@ $.getJSON('https://golf.jacoduplessis.co.za/?format=json', function (data) {
                   <thead class="table-header">   
                   <tr>
                   <th colspan="5">
-                  <h5 class = "modal-name align-middle"><img src="/static/img/pga-logo-40px.png" class="align-middle">  ${scores[i].name}</h5>
+                  <h5 class = "modal-name align-middle"><img src="static/img/pga-logo-40px.png" class="align-middle">  ${scores[i].name}</h5>
                   </th>
                   </tr>  
                   <tr>
