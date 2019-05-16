@@ -1031,7 +1031,7 @@ for (var s = 0; s < 2000; s++) {
         randomTwo = list[Math.floor(Math.random() * list.length)];
     }
 
-    if(randomThree == randomTwo || randomTwo){
+    if(randomThree == randomTwo || randomOne){
         randomThree = list[Math.floor(Math.random() * list.length)];
     }
 

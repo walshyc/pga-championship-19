@@ -5,7 +5,7 @@ $("#refresh").click(function () {
 
 var scores = [];
 var cutScore = 148;
-var currentTour = "European Tour";
+var currentTour = "PGA Tour";
 
 var picsks = [{
     "name": "Mark Towey",
