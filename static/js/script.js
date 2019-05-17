@@ -292,10 +292,10 @@ $.getJSON('https://golf.jacoduplessis.co.za/?format=json', function (data) {
             `
                 <tr data-toggle="modal" data-target="#${scores[i].short}-Modal" >
                     <td class="entry">${scores[i].name}</td>
+                    <td class="entry">${scores[i].score}</td>
                     <td class="entry d-none d-md-table-cell">${scores[i].pickOne} (${scores[i].pickOneScore})</td>
                     <td class="entry d-none d-md-table-cell">${scores[i].pickTwo} (${scores[i].pickTwoScore})</td>
                     <td class="entry d-none d-md-table-cell">${scores[i].pickThree} (${scores[i].pickThreeScore})</td>
-                    <td class="entry">${scores[i].score}</td>
                 </tr>
                 
             
