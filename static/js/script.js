@@ -381,5 +381,5 @@ $.getJSON('https://golf.jacoduplessis.co.za/?format=json', function (data) {
 );
 
 $(window).on('load', function() {
-    $("#cover").fadeOut(2000);
+    $("#cover").fadeOut(3000);
 });
