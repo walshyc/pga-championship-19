@@ -159,15 +159,17 @@ table.table-bordered>tbody>tr>th {
 }
 
 /* Loading Icon */
+
 .lds-ring {
     display: inline-block;
-    position: fixed;
-    top: 33%;
-    left: 50%;
+    position: absolute;
+    top: calc(50% - 80px);
+    left: calc(50% - 45px);
     width: 64px;
     height: 64px;
-  }
-  .lds-ring div {
+}
+
+.lds-ring div {
     box-sizing: border-box;
     display: block;
     position: absolute;
@@ -178,36 +180,36 @@ table.table-bordered>tbody>tr>th {
     border-radius: 50%;
     animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
     border-color: #fff transparent transparent transparent;
-  }
-  .lds-ring div:nth-child(1) {
+}
+
+.lds-ring div:nth-child(1) {
     animation-delay: -0.45s;
-  }
-  .lds-ring div:nth-child(2) {
+}
+
+.lds-ring div:nth-child(2) {
     animation-delay: -0.3s;
-  }
-  .lds-ring div:nth-child(3) {
+}
+
+.lds-ring div:nth-child(3) {
     animation-delay: -0.15s;
-  }
-  @keyframes lds-ring {
+}
+
+@keyframes lds-ring {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
+}
 
-  .loading{
-      color:white;
-      display: inline-block;
-    position: fixed;
-    top: 43%;
-    left: 48%;
+.loading {
+    color: white;
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - 5px);
+    left: calc(50% - 60px);
     width: 64px;
     height: 64px;
-  }
-
-  /* .pick{
-
-  }
-   */
+    text-align: center;
+}
