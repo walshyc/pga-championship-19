@@ -4,7 +4,7 @@ $("#refresh").click(function () {
 });
 
 var scores = [];
-var cutScore = 148;
+var cutScore;
 var currentTour = "PGA Tour";
 
 var picsks = [{
