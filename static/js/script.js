@@ -4,7 +4,7 @@ $("#refresh").click(function () {
 });
 
 var scores = [];
-var cutScore;
+var cutScore = 145;
 var currentTour = "PGA Tour";
 
 var picsks = [{
@@ -205,7 +205,7 @@ $.getJSON('https://golf.jacoduplessis.co.za/?format=json', function (data) {
 
                     if (data.Leaderboards[x].Players[a].Name === pickOne) {
                         if (data.Leaderboards[x].Players[a].Rounds[0] + data.Leaderboards[x].Players[a].Rounds[1] >= cutScore) {
-                            var pickOneScore = (data.Leaderboards[x].Players[a].Total + 10);
+                            var pickOneScore = data.Leaderboards[x].Players[a].Total
                             var pickOnePosition = "CUT";
                             var pickOneAfter = "-";
                             var pickOneToday = "-";
@@ -220,7 +220,7 @@ $.getJSON('https://golf.jacoduplessis.co.za/?format=json', function (data) {
 
                     if (data.Leaderboards[x].Players[a].Name === pickTwo) {
                         if (data.Leaderboards[x].Players[a].Rounds[0] + data.Leaderboards[x].Players[a].Rounds[1] >= cutScore) {
-                            var pickTwoScore = (data.Leaderboards[x].Players[a].Total + 10);
+                            var pickTwoScore = data.Leaderboards[x].Players[a].Total
                             var pickTwoPosition = "CUT";
                             var pickTwoAfter = "-";
                             var pickTwoToday = "-";
@@ -236,7 +236,7 @@ $.getJSON('https://golf.jacoduplessis.co.za/?format=json', function (data) {
 
                     if (data.Leaderboards[x].Players[a].Name === pickThree) {
                         if (data.Leaderboards[x].Players[a].Rounds[0] + data.Leaderboards[x].Players[a].Rounds[1] >= cutScore) {
-                            var pickThreeScore = (data.Leaderboards[x].Players[a].Total + 10);
+                            var pickThreeScore = data.Leaderboards[x].Players[a].Total
                             var pickThreePosition = "CUT";
                             var pickThreeAfter = "-";
                             var pickThreeToday = "-";
