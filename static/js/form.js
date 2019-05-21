@@ -2,7 +2,7 @@ var golfers = [];
 var list = [];
 var tournament = "PGA Championship";
 
-$.getJSON('https://golf.jacoduplessis.co.za/?format=json', function (data) {
+$.getJSON('static/data/pga-scores.json', function (data) {
 
     for (x = 0; x < data.Leaderboards.length; x++) {
         if (data.Leaderboards[x].Tournament == tournament) {
